@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/index.js",
-    "start:dev": "nodemon --exec yarn start",
-    "deploy": "prisma deploy"
+    "start:dev": "nodemon --exec node src/index.js"
   },
   "xo": {
     "prettier": true
