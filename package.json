@@ -1,0 +1,35 @@
+{
+  "name": "graphql_nexus_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon --exec yarn start",
+    "deploy": "prisma deploy"
+  },
+  "xo": {
+    "prettier": true
+  },
+  "dependencies": {
+    "apollo-server": "^2.4.2",
+    "apollo-server-express": "^2.4.2",
+    "bcrypt": "^3.0.4",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "graphql": "^14.1.1",
+    "graphql-middleware": "^3.0.2",
+    "graphql-shield": "^5.3.0",
+    "jsonwebtoken": "^8.5.0",
+    "nexus": "^0.9.14",
+    "nexus-prisma": "^0.3.1",
+    "nexus-prisma-generate": "^0.3.0",
+    "prisma-client-lib": "^1.26.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "xo": "^0.24.0"
+  }
+}
