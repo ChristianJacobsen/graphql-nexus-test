@@ -2,6 +2,8 @@
 
 > using [nexus-prisma](https://github.com/prisma/nexus-prisma/)
 
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+
 This is an example of how to use `graphql-shield` with [GraphQL Nexus](https://nexus.js.org/).
 
 ## Dependencies
