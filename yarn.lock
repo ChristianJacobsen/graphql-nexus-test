@@ -1990,7 +1990,7 @@ graphql-upload@^8.0.2:
     http-errors "^1.7.1"
     object-path "^0.11.4"
 
-"graphql@^0.12.0 || ^0.13.0 || ^14.0.0", graphql@^14.0.2, graphql@^14.1.1:
+graphql@^14.0.2, graphql@^14.1.1:
   version "14.1.1"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.1.1.tgz#d5d77df4b19ef41538d7215d1e7a28834619fac0"
   integrity sha512-C5zDzLqvfPAgTtP8AUPIt9keDabrdRAqSWjj2OPRKrKxI9Fb65I36s1uCs1UUBFnSWTdO7hyHi7z1ZbwKMKF6Q==
@@ -2495,7 +2495,7 @@ js-types@^1.0.0:
   resolved "https://registry.yarnpkg.com/js-types/-/js-types-1.0.0.tgz#d242e6494ed572ad3c92809fc8bed7f7687cbf03"
   integrity sha1-0kLmSU7Vcq08koCfyL7X92h8vwM=
 
-js-yaml@3.12.1, js-yaml@^3.12.0:
+js-yaml@^3.12.0:
   version "3.12.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
   integrity sha512-um46hB9wNOKlwkHgiuyEVAybXBjwFUV0Z/RaHJblRd9DXltue9FTYvzCr9ErQrK9Adz5MU4gHWVaNUfdmrC8qA==
@@ -3027,17 +3027,6 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
   integrity sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=
-
-nexus-prisma-generate@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/nexus-prisma-generate/-/nexus-prisma-generate-0.3.0.tgz#18498d4a809f4bd53ea6494d3c85c6869c525a7a"
-  integrity sha512-H86tEDCkGiGjRsyhfJorrMcxa29F4Wj9O9qfNGmi5v7Zth1jVmgTgyjiXhu2RtHeG1Hye7eflvsotJeSsQICEA==
-  dependencies:
-    graphql "^0.12.0 || ^0.13.0 || ^14.0.0"
-    js-yaml "3.12.1"
-    meow "^5.0.0"
-    prisma-datamodel "1.28.0-alpha.8"
-    prisma-generate-schema "1.28.0-alpha.8"
 
 nexus-prisma@^0.3.1:
   version "0.3.1"
@@ -3579,15 +3568,6 @@ prisma-datamodel@1.26.6:
     pluralize "^7.0.0"
     popsicle "10"
 
-prisma-datamodel@1.28.0-alpha.8:
-  version "1.28.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/prisma-datamodel/-/prisma-datamodel-1.28.0-alpha.8.tgz#117263b3eb47849f4963253300cff248bf52253c"
-  integrity sha512-6zRBIplSvOrhhsY3YxoIFB334JX7c4Z26JpCnPIEz/9yJp37MOWTyIITfASFWOoSBZ/gdgJemQ4+aPrPuMHwPw==
-  dependencies:
-    graphql "^14.0.2"
-    pluralize "^7.0.0"
-    popsicle "10"
-
 prisma-generate-schema@1.26.6:
   version "1.26.6"
   resolved "https://registry.yarnpkg.com/prisma-generate-schema/-/prisma-generate-schema-1.26.6.tgz#8f06629a3bfdd5373d9eb8082786e07fc4e78047"
@@ -3597,16 +3577,6 @@ prisma-generate-schema@1.26.6:
     pluralize "^7.0.0"
     popsicle "10"
     prisma-datamodel "1.26.6"
-
-prisma-generate-schema@1.28.0-alpha.8:
-  version "1.28.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/prisma-generate-schema/-/prisma-generate-schema-1.28.0-alpha.8.tgz#2be398aab6a3f62c2212f6c953a91e010c99ff06"
-  integrity sha512-jeN4mIKYz28dxFJdFfAcu4yBkmuK8R8s2IuyF10uEVZyfq1PMzM/HYOYAdlNcESiXazA7wqIzzvyzb72AACQ4Q==
-  dependencies:
-    graphql "^14.0.2"
-    pluralize "^7.0.0"
-    popsicle "10"
-    prisma-datamodel "1.28.0-alpha.8"
 
 process-nextick-args@~2.0.0:
   version "2.0.0"

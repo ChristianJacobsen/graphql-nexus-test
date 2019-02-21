@@ -1,7 +1,7 @@
-const cookieParser = require('cookie-parser');
 const express = require('express');
-const {ApolloServer} = require('apollo-server-express');
+const cookieParser = require('cookie-parser');
 const {applyMiddleware} = require('graphql-middleware');
+const {ApolloServer} = require('apollo-server-express');
 
 const {authorization} = require('./lib/middlewares/authorization');
 const {schema: baseSchema} = require('./schema');
@@ -10,7 +10,7 @@ const {prisma} = require('./generated/prisma-client');
 
 const app = express();
 app.use(cookieParser());
-app.use(authorization);
+app.use(authorization());
 
 const schema = applyMiddleware(baseSchema, permissions);
 const server = new ApolloServer({

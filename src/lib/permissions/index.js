@@ -2,17 +2,16 @@ const {allow, shield} = require('graphql-shield');
 
 const {isAuthenticated} = require('./rules/is-authenticated');
 
-const permissions = shield(
-	{
-		Mutation: {
-			login: allow,
-			signup: allow
-		}
+const permissions = shield({
+	Query: {
+		'*': isAuthenticated
 	},
-	{
-		fallbackRule: isAuthenticated
+	Mutation: {
+		'*': isAuthenticated,
+		login: allow,
+		signup: allow
 	}
-);
+});
 
 module.exports = {
 	permissions

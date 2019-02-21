@@ -8,4 +8,4 @@ generate:
 hooks:
   post-deploy:
     - prisma generate
-    - yarn run nexus-prisma-generate --client ./src/generated/prisma-client/ --output ./src/generated/nexus-prisma/ --js
+    - npx nexus-prisma-generate --client ./src/generated/prisma-client/ --output ./src/generated/nexus-prisma/ --js

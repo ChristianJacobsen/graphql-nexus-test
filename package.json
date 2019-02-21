@@ -22,7 +22,6 @@
     "jsonwebtoken": "^8.5.0",
     "nexus": "^0.9.14",
     "nexus-prisma": "^0.3.1",
-    "nexus-prisma-generate": "^0.3.0",
     "prisma-client-lib": "^1.26.6"
   },
   "devDependencies": {
